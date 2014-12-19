@@ -1,0 +1,4 @@
+format: '+p+dn+s: +m'
+group:
+    admin:
+        prefix: '[admin] '

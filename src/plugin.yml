@@ -1,0 +1,19 @@
+main: me.ferry.bukkit.plugins.multichat.MultiChat
+name: MultiChat
+version: 1.0.0
+author: ferrybig
+description: |
+  Provides chat prefix and suffix support based on "group.*" permission nodes
+   instead of hooking directly inside permission plugins.
+  This allows you to use a custom permissions plugin without many troubles.
+commands:
+    ferrychat:
+        usage: |
+          /<command> reload - Reloads the chatformats from disk
+          /<command> reformat - Regenerates the chat formats in memory
+          /<command> refresh - Resynces the chat thread with the main threat
+          /<command> reloadall - Does all the above actions
+        permission: ferrychat.admin
+        description: ferrychat admin commands
+           
+        

@@ -1,0 +1,8 @@
+/server.properties
+/server.log.lck
+/server.log
+/server/
+/lib/
+/nbproject/
+/build/
+/dist/
