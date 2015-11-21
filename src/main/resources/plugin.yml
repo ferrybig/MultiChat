@@ -1,7 +1,7 @@
 main: me.ferry.bukkit.plugins.multichat.MultiChat
 name: MultiChat
 version: 1.0.0
-author: ferrybig
+author: ${project.version}
 description: |
   Provides chat prefix and suffix support based on "group.*" permission nodes
    instead of hooking directly inside permission plugins.

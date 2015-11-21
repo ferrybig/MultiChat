@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
-import javax.annotation.Nonnull;
 import org.apache.commons.lang.Validate;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
@@ -28,7 +27,6 @@ public class ChatFormatContainer {
         this.plugin = plugin;
     }
 
-    @Nonnull
     public Map<UUID, String> getFormat() {
         return chatFormats;
     }
