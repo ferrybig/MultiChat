@@ -57,8 +57,6 @@ public class MultiChat extends PluginCore implements Listener {
         String format = chat.getFormat().get(event.getPlayer().getUniqueId());
         if (format != null) {
             event.setFormat(format);
-        } else {
-            this.sendMessage(event.getPlayer(), "Still loading...");
         }
     }
 
