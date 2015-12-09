@@ -47,8 +47,8 @@ public class MultiChat extends PluginCore implements Listener {
             this.chat.updatePlayer(pl.getUniqueId());
         }
         this.chat.pushUpdate();
-        this.getCommand("ferrychat").setExecutor(command);
-        this.getCommand("ferrychat").setTabCompleter(command);
+        this.getCommand("multichat").setExecutor(command);
+        this.getCommand("multichat").setTabCompleter(command);
         this.getServer().getPluginManager().registerEvents(this, this);
     }
 

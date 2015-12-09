@@ -7,7 +7,7 @@ description: |
    instead of hooking directly inside permission plugins.
   This allows you to use a custom permissions plugin without many troubles.
 commands:
-    ferrychat:
+    multichat:
         usage: |
           /<command> reload - Reloads the chatformats from disk
           /<command> reformat - Regenerates the chat formats in memory
