@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.logging.Level;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
@@ -74,7 +75,8 @@ public class PluginCore extends JavaPlugin {
         InputStream defConfigStream = getResource(this.configFileName);
         if (defConfigStream != null) {
             newConfig.setDefaults(
-                    YamlConfiguration.loadConfiguration(defConfigStream));
+                    YamlConfiguration.loadConfiguration(
+							new InputStreamReader(defConfigStream)));
         }
     }
 
