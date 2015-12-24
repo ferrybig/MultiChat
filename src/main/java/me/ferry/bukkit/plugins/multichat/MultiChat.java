@@ -2,6 +2,7 @@ package me.ferry.bukkit.plugins.multichat;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.logging.Level;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -31,8 +32,8 @@ public class MultiChat extends PluginCore implements Listener {
     public void onEnable(){
         try {
             this.reloadConfigWithErrors();
-        } catch (IOException |InvalidConfigurationException ex) {
-            ex.printStackTrace(System.out);
+        } catch (IOException | InvalidConfigurationException ex) {
+			this.getLogger().log(Level.SEVERE, "Problem loading config", ex);
             this.getServer().getPluginManager().disablePlugin(this);
             this.setEnabled(false);
             return;
