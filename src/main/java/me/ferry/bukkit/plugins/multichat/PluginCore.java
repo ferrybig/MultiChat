@@ -100,7 +100,9 @@ public class PluginCore extends JavaPlugin {
             saveResource("config.yml", false);
         }
     }
-private String prefix;
+
+    private String prefix;
+
     public final void sendMessage(CommandSender sender, String msg) {
         if (this.prefix == null) {
             this.prefix = getConfig().getString("chattag","[FerryChat]");
